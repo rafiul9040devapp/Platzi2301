@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/tv_category_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: 1" />
+
+    <TextView
+        android:id="@+id/tv_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: nuevo" />
+
+    <ImageView
+        android:id="@+id/imv_category_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_category_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created At: 2023-08-11T17:00:08.000Z" />
+
+    <TextView
+        android:id="@+id/tv_category_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated At: 2023-08-12T04:31:03.000Z" />
+</LinearLayout>
