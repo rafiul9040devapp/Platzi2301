@@ -16,7 +16,19 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
-    private val viewModel: ProfileViewModel by viewModels()
+//    private val viewModel: ProfileViewModel by viewModels()
+//    This approach uses the by viewModels() property delegate without specifying the ViewModel type.
+//    It relies on type inference to determine the ViewModel's type based on the property's type.
+//    This approach is concise and often works well.
+
+
+    //more modern approach
+    private val viewModel by viewModels<ProfileViewModel>()
+//    This approach explicitly specifies the type of ViewModel you want to create using viewModels<ProfileViewModel>().
+//    It provides a bit more clarity and is preferred when you want to be explicit about the ViewModel's type.
+
+
+
 
     private lateinit var binding: FragmentProfileBinding
 
